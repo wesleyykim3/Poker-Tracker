@@ -1,0 +1,190 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    color: #4a90e2;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Tables */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* To keep the rounded corners */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4a90e2;
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e0f7fa;
+}
+
+/* Buttons */
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.1s; /* Smooth transition */
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly scale down on click */
+}
+
+/* Create button */
+.create-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.create-button:hover {
+    background-color: #45a049;
+}
+
+/* Icon buttons */
+button.icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+button.icon-button.edit {
+    color: #4a90e2;
+}
+
+button.icon-button.edit:hover {
+    color: #357ABD; /* Darken the color on hover */
+}
+
+button.icon-button.delete {
+    color: #e74c3c;
+}
+
+button.icon-button.delete:hover {
+    color: #c0392b; /* Darken the color on hover */
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px; /* Added rounded corners */
+    border: 1px solid #888;
+    position: relative;
+    width: 80%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for modal */
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: gray;
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.modal-close-button:hover {
+    color: darkgray;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    margin-right: 10px;
+}
+
+form input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    transition: border-color 0.3s; /* Smooth transition for border */
+}
+
+form input:focus {
+    border-color: #4a90e2; /* Change border color on focus */
+}
+
+form button {
+    width: 100%;
+    max-width: 200px;
+    background-color: #4caf50;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+form button:hover {
+    background-color: #45a049;
+}
